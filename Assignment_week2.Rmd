@@ -1,0 +1,24 @@
+---
+title: "Assigment_Week2_Leaflet"
+author: "JolyTematio"
+date: "July 21, 2019"
+output: ioslides_presentation
+---
+
+
+## About Me
+
+Hey there, Joly here.
+I am having lots of fun learning the Data science course and completing this assigment on a late night of July 21st, 2019.
+
+How are you doing? :)
+
+## My Awesome Leaflet
+
+```{r , echo=FALSE}
+
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=43.1594, lng= -79.2469, popup="My Office")
+my_map
+```
